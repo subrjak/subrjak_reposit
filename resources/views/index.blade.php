@@ -160,6 +160,6 @@
         </div>
     </main>
 </body>
-<script src="js/reg_log.js"></script>
+<script defer src="js/reg_log.js"></script>
 
 </html>
