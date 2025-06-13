@@ -159,6 +159,8 @@
             </div>
         </div>
     </main>
+    <script src="js/menu.js"></script>
+    <script src="js/reg_log.js"></script>
 </body>
 <script defer src="js/reg_log.js"></script>
 
