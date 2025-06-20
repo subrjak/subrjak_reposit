@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Интернет-магазин мебели Petro Furniture. Подберите свой идеальный интерьер.">
     <title>Petro Furniture</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/main.css">
-    <script defer src="js/menu.js"></script>
 </head>
 
 <body>
@@ -16,12 +16,12 @@
             <img src="images/logo.png" alt="Logo">
             <p class="logo_text">Petro<br>Furniture</p>
         </div>
-        <div class="header_poisk">
-            <button id="burger-btn" class="menu" aria-label="Открыть меню">
-                <img src="images/Burger menu.png" alt="">
-            </button>
+        <form class="header_poisk">
             <input type="text" placeholder="Название товара">
-        </div>
+            <button id="burger-btn" type="button" class="menu" aria-label="Открыть меню">
+                <img src="images/Burger menu.png" alt="Меню">
+            </button>
+        </form>
         <!--Меню категорий-->
         <nav id="burger-menu" class="burger-menu">
             <div class="menu-grid">
@@ -54,11 +54,11 @@
         <!--Переключение темы-->
         <div class="header_action">
             <button id="theme-toggle" aria-label="Переключить тему" class="theme-toggle">
-                <img src="./images/tema.png" alt="" width="50px" height="50px">
+                <img src="./images/tema.svg" alt="" width="50px" height="50px">
             </button>
             <img src="./images/Karzina.png" alt="cart">
             <!--Регистрация-->
-            <div class="log_reg">
+            <div id="auth-container" class="log_reg">
                 <button id="btn-register">Регистрация</button>
                 <button id="btn-login">Вход</button>
             </div>
@@ -73,7 +73,6 @@
                         <input type="password" id="reg-password" placeholder="Минимальная длина 6 символов"
                             minlength="6" required>
                         <button type="submit">Регистрация</button>
-                        <p>Уже есть аккаунт? <a href="#" id="toLogin">Войти</a></p>
                     </form>
                 </div>
                 <!--Вход-->
@@ -89,8 +88,14 @@
                     </form>
                     <div class="help-link">
                         <a href="#">Забыли пароль?</a>
-                        <p>Нет аккаунта? <a href="#" id="toRegister">Зарегистрироваться</a></p>
                     </div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <div id="profile-menu"
+                    style="display: none; position: absolute; top: 50px; right: 0; background: white; border: 1px solid #ccc; padding: 10px;">
+                    <button id="profile-cabinet-btn">Личный кабинет</button>
+                    <button id="logout-btn">Выйти</button>
                 </div>
             </div>
         </div>
@@ -161,7 +166,7 @@
     </main>
     <script src="js/menu.js"></script>
     <script src="js/reg_log.js"></script>
+    <script src="js/fetch.js"></script>
 </body>
-<script defer src="js/reg_log.js"></script>
 
 </html>

@@ -28,7 +28,7 @@ body {
     font-size: 20px;
     margin: 0;
     padding: 0;
-        min-height: 100vh;
+    min-height: 100vh;
 }
 
 header {
@@ -41,7 +41,7 @@ header {
     padding-inline: 20px;
     box-sizing: border-box;
     height: 112px;
-    gap: 20px;
+    gap: 30px;
     z-index: 10000;
 }
 
@@ -106,7 +106,7 @@ header {
 }
 
 .burger-menu.active {
-    display: block;
+    display: grid;
 }
 
 .burger-menu a {
@@ -125,7 +125,7 @@ header {
 .theme_toggle {
     width: 50px;
     height: 50px;
-    margin:10px;
+    margin: 20px;
 }
 
 .header_action {
@@ -143,7 +143,8 @@ header {
     gap: 10px;
 }
 
-#btn-register, #btn-login {
+#btn-register,
+#btn-login {
     background-color: burlywood;
     border-radius: 5px;
 }
@@ -232,6 +233,43 @@ header {
     text-decoration: none;
 }
 
+.user-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#profile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+}
+
+#profile-menu button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+#profile-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+.error-message {
+    margin-top: 4px;
+    color: red;
+    font-size: 0.85em;
+}
+
 main {
     display: flex;
     align-items: center;
@@ -287,12 +325,12 @@ main {
 
 .info_text {
     position: absolute;
-    left: 880px;
+    left: 670px;
 }
 
 .comand_work_text {
     position: absolute;
-    left: 1350px;
+    left: 1050px;
     text-align: right;
     bottom: 80px;
 }
