@@ -61,102 +61,89 @@
                 <button id="btn-register">Регистрация</button>
                 <button id="btn-login">Вход</button>
             </div>
-            <div id="overlay" class="modal-overlay">
-                <div id="modal-register" class="modal">
-                    <button class="close-btn" data-close>&times;</button>
-                    <h2>Регистрация</h2>
-                    <form id="form-register">
-                        <label for="reg-email">Email</label>
-                        <input type="email" id="reg-email" placeholder="example@gmail.com" required>
-                        <label for="reg-password">Пароль</label>
-                        <input type="password" id="reg-password" placeholder="Минимальная длина 6 символов"
-                            minlength="6" required>
-                        <button type="submit">Регистрация</button>
-                        <p>Уже есть аккаунт? <a href="#" id="toLogin">Войти</a></p>
-                    </form>
-                </div>
-                <!--Вход-->
-                <div id="modal-login" class="modal">
-                    <button class="close-btn" data-close>&times;</button>
-                    <h2>Вход</h2>
-                    <form id="form-login">
-                        <label for="login-email">Email</label>
-                        <input type="email" id="login-email" placeholder="example@gmail.com" required>
-                        <label for="login-password">Пароль</label>
-                        <input type="password" id="login-password" placeholder="Ваш пароль" minlength="6" required>
-                        <button type="submit">Войти</button>
-                    </form>
-                    <div class="help-link">
-                        <a href="#">Забыли пароль?</a>
-                        <p>Нет аккаунта? <a href="#" id="toRegister">Зарегистрироваться</a></p>
-                    </div>
-                </div>
-            </div>
         </div>
     </header>
     <!--Основной блок-->
     <main class="main">
-        <div class="text_content">
-            <div class="welcome_text">Добро пожаловать на сайт нашего салона</div>
-            <div class="company">Petro Furniture</div>
-        </div>
-        <div class="main_content">
-            <div class="info">
-                <img src="./images/Rassrochka.svg" alt="">
-                <img src="./images/Sertifikat.png" alt="">
-                <p class="info_text">Разрабатывай свой<br>
-                    собственный<br>
-                    дизайн</p>
-                <img src="./images/Design.png" alt="">
-                <p class="comand_work_text">Работа с лучшими<br>
-                    мебельными<br>
-                    фирмами</p>
-                <img src="./images/Comand_work.png" alt="">
-            </div>
-            <div class="design">
-                <img src="./images/divan_main.png" alt="" class="design_img">
-                <div class="design-text">
-                    <p class="design_p">
-                        Благодаря конфигуратору, который есть на нашем сайте, вы можете настроить выбранный
-                        вами товар так, как пожелает ваша душа. Цвет, материал обивки, материал конструкции - всё для
-                        вашего
-                        комфорта!
-                    </p>
-                    <div class="swatch-container">
-                        <div class="swatch" style="background-color: #C2B280;" title="Бежевый"></div>
-                        <div class="swatch" style="background-color: #8B5E3C;" title="Коричневый"></div>
-                        <div class="swatch" style="background-color: #B22222;" title="Красный"></div>
-                        <div class="swatch" style="background-color: #2E8B57;" title="Зелёный"></div>
+        <div class = "layouts">
+            <div class="main_content">
+                <section class="features">
+                    <div class="features__grid">
+                        <div class="feature-card">
+                            <img src="./images/create-mebel.jpg" alt="Индивидуальный дизайн" class="feature-card__icon">
+                            <h3 class="feature-card__heading">Индивидуальный дизайн</h3>
+                            <p class="feature-card__text">
+                                Настройте цвет, форму и материалы под свой интерьер.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="./images/garantiya.png" alt="Высокое качество" class="feature-card__icon">
+                            <h3 class="feature-card__heading">Высокое качество</h3>
+                            <p class="feature-card__text">
+                                Экологичные и долговечные материалы от ведущих поставщиков.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="./images/dostavka.png" alt="Быстрая доставка" class="feature-card__icon">
+                            <h3 class="feature-card__heading">Быстрая доставка</h3>
+                            <p class="feature-card__text">
+                                Сборка и доставка по всей стране за 3–5 рабочих дней.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="./images/servise.png" alt="Гарантия и сервис" class="feature-card__icon">
+                            <h3 class="feature-card__heading">Гарантия и сервис</h3>
+                            <p class="feature-card__text">
+                                2 года гарантии и круглосуточная поддержка клиентов.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <div class="design">
+                    <img src="./images/divan_main.png" alt="" class="design_img">
+                    <div class="design-text">
+                        <p class="design_p">
+                            Благодаря конфигуратору, который есть на нашем сайте, вы можете настроить выбранный
+                            вами товар так, как пожелает ваша душа. Цвет, материал обивки, материал конструкции - всё
+                            для
+                            вашего
+                            комфорта!
+                        </p>
+                        <div class="swatch-container">
+                            <div class="swatch" style="background-color: #C2B280;" title="Бежевый"></div>
+                            <div class="swatch" style="background-color: #8B5E3C;" title="Коричневый"></div>
+                            <div class="swatch" style="background-color: #B22222;" title="Красный"></div>
+                            <div class="swatch" style="background-color: #2E8B57;" title="Зелёный"></div>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        <div class="Olga">
+                            <div>
+                                <div>⭐⭐⭐⭐☆</div>
+                                <strong>Шикарный диван</strong><br>
+                                Очень мягкий, удобный, ребёнку понравился<br>
+                                <em>Ольга</em>
+                            </div>
+                        </div>
+                        <div class="Ekat">
+                            <div>
+                                <div>⭐⭐⭐⭐⭐</div>
+                                <strong>Качество супер</strong><br>
+                                Понравился материал, приятный на ощупь<br>
+                                <em>Екатерина</em>
+                            </div>
+                        </div>
+                        <div class="Mariya">
+                            <div>
+                                <div>⭐⭐⭐☆☆</div>
+                                <strong>Товар хороший, но доставка долгая</strong><br>
+                                Понравился сам диван, но ехал долго<br>
+                                <em>Мария</em>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="comments">
-                    <div class="Olga">
-                        <div>
-                            <div>⭐⭐⭐⭐☆</div>
-                            <strong>Шикарный диван</strong><br>
-                            Очень мягкий, удобный, ребёнку понравился<br>
-                            <em>Ольга</em>
-                        </div>
-                    </div>
-                    <div class="Ekat">
-                        <div>
-                            <div>⭐⭐⭐⭐⭐</div>
-                            <strong>Качество супер</strong><br>
-                            Понравился материал, приятный на ощупь<br>
-                            <em>Екатерина</em>
-                        </div>
-                    </div>
-                    <div class="Mariya">
-                        <div>
-                            <div>⭐⭐⭐☆☆</div>
-                            <strong>Товар хороший, но доставка долгая</strong><br>
-                            Понравился сам диван, но ехал долго<br>
-                            <em>Мария</em>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
     </main>
 
     <script defer src="{{ asset('js/reg_log.js') }}"></script>
